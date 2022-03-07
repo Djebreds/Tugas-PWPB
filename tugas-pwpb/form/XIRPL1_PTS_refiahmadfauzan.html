@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PTS PWPB</title>
+</head>
+<body bgcolor="#FFFFF">
+    <h1 align="center">Membuat Form</h1>
+    <table align="center" border="0" cellspacing="0"  cellpadding="8" >
+        <form action="simpan.php" method="POST">
+            <tr>
+                <th colspan="2"><h3>Data Diri</h3></th>
+                <th colspan="2"><h3>Buat Account</h3></th>
+            </tr>
+            <tr>
+                <td><label for="nama">NAMA</label></td>
+                <td>: <input type="text" name="nama" id="nama" maxlength="55" placeholder="Nama Lengkap..." required></td>
+                <td><label for="username">USERNAME</label></td>
+                <td>: <input type="text" name="username" maxlength="25" id="username" placeholder="Username..." required></td>
+            </tr>
+            <tr>
+                <td><label for="phone">PHONE</label></td>
+                <td>: <input type="text" name="phone" id="phone" minlength="12" maxlength="12" size="12" placeholder="081112222333" required><small> (12 digit number) </small></td>
+                <td><label for="password">PASSWORD</label></td>
+                <td>: <input type="password" name="password" id="password" minlength="8" placeholder="Password..." required><small> (min 8 character) </small></td>
+            </tr>
+            <tr>
+                <td><label for="jenis">JENIS KELAMIN </label></td>
+                <td>
+                    : <input type="radio" id="jenis" name="jenis" required value="Laki-laki">laki-laki
+                    <input type="radio" id="jenis" name="jenis" required value="Perempuan">perempuan
+                </td>
+            </tr>
+            <tr>
+                <td><label for="lahir">TEMPAT & TANGGAL LAHIR </label></td>
+                <td>
+                    : <select name="tempat" id="lahir" required>
+                        <option value="Bandung">Bandung</option>
+                        <option value="Jakarta">Jakarta</option>
+                        <option value="Tanggerang">Tanggerang</option>
+                        <option value="Bekasi">Bekasi</option>
+                        <option value="Bogor">Bogor</option>
+                        <option value="Depok">Depok</option>
+                        <option value="Cianjur">Cianjur</option>
+                    </select>
+                    <input type="date" name="tanggal" id="lahir" required>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="alamat">ALAMAT </label></td>
+                <td><textarea name="alamat" id="alamat" cols="30" rows="5" placeholder="Alamat..." required></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="pos">KODE POS </label></td>
+                <td>: <input type="text" id="pos" name="pos" maxlength="5" minlength="5" size="5" placeholder="40912" required><small> (5 digit number) </small></td>
+            </tr>
+            <tr>
+                <td><label for="ortu">NAMA ORANG TUA</label></td>
+                <td>
+                     : <input type="text" name="ibu" maxlength="55" id="ortu" placeholder="Nama Ibu..." required>
+                    <br><br>
+                     : <input type="text" name="bapak" maxlength="55" id="ortu" placeholder="Nama Bapak..." required>
+                </td>
+            </tr>
+            <tr>
+               <td colspan="4" align="center">
+                   <button type="reset">Hapus</button>
+                   <button type="submit">Kirim</button>
+               </td>
+            </tr>
+        </form>
+    </table>
+</body>
+</html>
